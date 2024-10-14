@@ -1,0 +1,27 @@
+#testingCSS {
+  position: absolute;
+  border: solid blue;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+
+  mask-image: linear-gradient(to top, transparent 0%, rgb(0, 0, 0) 20%);
+
+  overflow: hidden;
+  z-index: -1;
+}
+
+#makimaIMG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  clip-path: inset(0px 1px 500px 1px);
+  object-fit: cover;
+  mask-image: linear-gradient(to top, transparent 60%, rgb(0, 0, 0) 90%);
+}

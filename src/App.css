@@ -6,64 +6,80 @@ body {
 .highlight {
   color: rgb(235, 0, 34);
 }
+p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 button {
   border-radius: 5px;
-  border: solid 1px black;
+  border: solid 0px black;
   font-size: 15pt;
   color: rgb(0, 0, 0);
   padding: 10px;
-  width: 200px;
+  width: auto;
   height: 40px;
-  font-weight: 600;
-}
-
-p {
-  color: white;
+  font-weight: 2px;
+  display: inline-block;
+  transition: all ease-in-out 0.2s;
 }
 
 button:hover {
   transform: scale(1.1);
-  transition: all ease-in-out 0.2s;
   cursor: pointer;
+  background-color: rgb(235, 0, 34);
+  color: white;
 }
 
 #master {
-  border: solid black;
+  border: none black;
   padding: 70px;
 }
 
 #logoTitle {
   justify-content: center;
   display: flex;
-  border: solid red;
-  padding: 0px;
+  border-radius: 10px;
+  height: auto;
+  border: none red;
+  align-items: center;
 }
 
 #logoTitle p {
-  font-size: 100pt;
-  justify-content: center;
+  font-size: 110pt;
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: solid rgb(0, 0, 255);
+  border: none rgb(0, 0, 255);
 }
 
 #logoContainer {
-  border: solid brown;
-  padding-top: 80pt;
+  border: none brown;
 }
+
+#logoTitle:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#logoTitle {
+  transition: all ease-in-out 0.2s;
+  border: none rgb(255, 255, 255);
+  height: 140pt;
+}
+
 #logoTitle img {
-  border: solid black;
-  width: 200px;
-  height: 200px;
+  border: none black;
+  padding: 1px;
+  width: 150px;
+  height: 150px;
 }
 
 #miniNav {
-  border: solid orange;
+  border: none orange;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 1px 0;
 }
 
 span {
@@ -74,7 +90,7 @@ span {
 #searchBar {
   justify-content: center;
   display: flex;
-  border: solid rgb(0, 255, 38);
+  border: none rgb(0, 255, 38);
   padding: 20px;
 }
 
@@ -83,6 +99,7 @@ span {
   height: 40px;
   border-radius: 5px;
   font-size: 20pt;
+  padding: 5px;
   background-color: rgb(255, 255, 216);
 }
 
@@ -94,7 +111,7 @@ span {
 }
 
 #recentSakuga {
-  border: solid rgb(0, 255, 60);
+  border: none rgb(0, 255, 60);
   padding: 50px;
   justify-content: center;
   display: flex;
@@ -107,28 +124,22 @@ span {
 }
 
 #reccomendations {
-  border: solid purple;
+  border: none purple;
 }
 
 #reccomendations p {
   justify-content: center;
   display: flex;
-  border: solid blue;
+  border: none blue;
   width: 20%;
-  font-size: 20pt;
+  font-size: 18pt;
 }
 
 #tags {
   justify-content: center;
   display: flex;
-  border: solid red;
-}
-
-#tags div {
-  border: solid blue;
-  justify-content: center;
-  display: flex;
-  color: white;
+  border: none black;
+  padding: 10px;
 }
 
 #tags button {
@@ -138,26 +149,30 @@ span {
 #reccomendTags {
   justify-content: center;
   display: flex;
-  border: solid green;
+  border: none green;
 }
 
 #searchBtn {
   justify-content: center;
   display: flex;
-  border: solid orange;
+  border: none orange;
 }
 
 #searchBtn button {
-  width: 150px;
-  height: 50px;
+  width: auto;
+  height: auto;
+  display: inline-block;
 
   background-color: white;
   color: black;
   font-weight: 100;
 }
 
-#tagElements {
-  width: 100pt;
+#tags button {
+  font-size: 12pt;
+  width: auto;
+  display: inline-block;
   background-color: rgb(255, 0, 34);
   color: white;
+  border: none;
 }
