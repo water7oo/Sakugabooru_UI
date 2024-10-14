@@ -6,13 +6,20 @@ function Home() {
     <div id="master">
       <div id="miniNav">
         <button>Posts</button>
+        <span></span>
         <button>Comments</button>
+        <span></span>
         <button>Tags</button>
+        <span></span>
         <button>Wiki</button>
+        <span></span>
         <button>test5</button>
       </div>
       <div id="logoTitle">
-        <img src="\images\Sakugabooru1.png" alt="booruText"></img>
+        <div id="logoContainer">
+          <img src="\images\Sakugabooru1(whitefill).png" alt="booruText"></img>
+        </div>
+        <span></span>
         <p>
           SAKUGA<span class="highlight">BOORU</span>
         </p>
@@ -21,20 +28,22 @@ function Home() {
         <input type="text" placeholder="Search..."></input>
         <button> X </button>
       </div>
+      <div id="searchBtn">
+        <button>Search</button>
+      </div>
       <div id="reccomendations">
-        <p>Reccomended Tags</p>
+        <div id="reccomendTags">
+          <p>Reccomended:</p>
+        </div>
         <div id="tags">
-          <div id="tagElements">tag1</div>
-          <div id="tagElements">tag1</div>
-          <div id="tagElements">tag1</div>
-          <div id="tagElements">tag1</div>
-          <div id="tagElements">tag1</div>
-          <div id="tagElements">tag1</div>
+          <button id="tagElements">kanada_flare</button>
+          <button id="tagElements">yutapon_cubes</button>
+          <button id="tagElements">umikoshi_eye</button>
+          <button id="tagElements">smears</button>
+          <button id="tagElements">character_acting</button>
         </div>
       </div>
       <div id="recentSakuga">
-        <div id="sakugaElements">SakugaWOW</div>
-        <div id="sakugaElements">SakugaWOW</div>
         <div id="sakugaElements">SakugaWOW</div>
         <div id="sakugaElements">SakugaWOW</div>
         <div id="sakugaElements">SakugaWOW</div>

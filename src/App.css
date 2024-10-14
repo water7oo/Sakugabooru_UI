@@ -1,53 +1,74 @@
 body {
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(30, 30, 30);
+  font-family: Arial, Helvetica, sans-serif;
 }
 .highlight {
   color: rgb(235, 0, 34);
 }
 
 button {
-  border-radius: 1px;
+  border-radius: 5px;
   border: solid 1px black;
-
-  color: rgb(235, 0, 34);
+  font-size: 15pt;
+  color: rgb(0, 0, 0);
   padding: 10px;
-  width: 100px;
+  width: 200px;
   height: 40px;
+  font-weight: 600;
+}
+
+p {
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
 }
 
 #master {
   border: solid black;
-  padding: 100px;
+  padding: 70px;
 }
 
 #logoTitle {
   justify-content: center;
   display: flex;
-  border: none red;
-  padding: 10px;
+  border: solid red;
+  padding: 0px;
 }
 
 #logoTitle p {
-  font-size: 50pt;
+  font-size: 100pt;
+  justify-content: center;
+  color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: solid blue;
+  border: solid rgb(0, 0, 255);
 }
 
-#logoTitle img {
+#logoContainer {
   border: solid brown;
-  width: 150px;
-  height: 150px;
+  padding-top: 80pt;
+}
+#logoTitle img {
+  border: solid black;
+  width: 200px;
+  height: 200px;
 }
 
 #miniNav {
   border: solid orange;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
-#miniNav p {
-  border: solid blue;
+span {
+  width: 10px;
+  height: 50px;
 }
 
 #searchBar {
@@ -58,18 +79,23 @@ button {
 }
 
 #searchBar input {
-  width: 100%;
+  width: 50%;
   height: 40px;
+  border-radius: 5px;
   font-size: 20pt;
+  background-color: rgb(255, 255, 216);
 }
 
 #searchBar button {
   width: 40px;
+  background-color: white;
+  color: black;
+  font-weight: 100;
 }
 
 #recentSakuga {
   border: solid rgb(0, 255, 60);
-  padding: 80px;
+  padding: 50px;
   justify-content: center;
   display: flex;
 }
@@ -77,7 +103,7 @@ button {
 #recentSakuga div {
   border: solid orange;
   width: 700px;
-  height: 200px;
+  height: 400px;
 }
 
 #reccomendations {
@@ -89,8 +115,49 @@ button {
   display: flex;
   border: solid blue;
   width: 20%;
+  font-size: 20pt;
 }
 
 #tags {
+  justify-content: center;
+  display: flex;
   border: solid red;
+}
+
+#tags div {
+  border: solid blue;
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+
+#tags button {
+  width: 100%;
+}
+
+#reccomendTags {
+  justify-content: center;
+  display: flex;
+  border: solid green;
+}
+
+#searchBtn {
+  justify-content: center;
+  display: flex;
+  border: solid orange;
+}
+
+#searchBtn button {
+  width: 150px;
+  height: 50px;
+
+  background-color: white;
+  color: black;
+  font-weight: 100;
+}
+
+#tagElements {
+  width: 100pt;
+  background-color: rgb(255, 0, 34);
+  color: white;
 }
