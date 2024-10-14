@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div id="master">
+      <div id="miniNav">
+        <button>Posts</button>
+        <button>Comments</button>
+        <button>Tags</button>
+        <button>Wiki</button>
+        <button>test5</button>
+      </div>
+      <div id="logoTitle">
+        <img src="\images\Sakugabooru1.png" alt="booruText"></img>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          SAKUGA<span class="highlight">BOORU</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div id="searchBar">
+        <input type="text" placeholder="Search..."></input>
+        <button> X </button>
+      </div>
+      <div id="reccomendations">
+        <p>Reccomended Tags</p>
+        <div id="tags">
+          <div id="tagElements">tag1</div>
+          <div id="tagElements">tag1</div>
+          <div id="tagElements">tag1</div>
+          <div id="tagElements">tag1</div>
+          <div id="tagElements">tag1</div>
+          <div id="tagElements">tag1</div>
+        </div>
+      </div>
+      <div id="recentSakuga">
+        <div id="sakugaElements">SakugaWOW</div>
+        <div id="sakugaElements">SakugaWOW</div>
+        <div id="sakugaElements">SakugaWOW</div>
+        <div id="sakugaElements">SakugaWOW</div>
+        <div id="sakugaElements">SakugaWOW</div>
+        <div id="sakugaElements">SakugaWOW</div>
+      </div>
     </div>
   );
+}
+
+function App() {
+  return <div>{Home()}</div>;
 }
 
 export default App;
